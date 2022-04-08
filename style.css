@@ -1,6 +1,162 @@
 /* style.css */
-
-.header, .footer {
-    background: #1F2937;
+body {
+    height: 100vh; /*100% of the viewport height*/
+    margin: 0;
+    overflow: scroll;
+    font-family: Roboto, sans-serif; 
+    
+    display: flex;
+    flex-direction: column;
 }
 
+
+/* hero header */
+.header, .footer {
+    background: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 8px 48px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;  
+}
+
+.header-logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+}
+
+.intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-text {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;;
+}
+
+button {
+    background: #3882f6;
+    color: #f9faf8;
+    border-color: #f9faf8;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 5px 16px;
+}
+
+/* body */
+.body {
+    color: #1f2937;
+    font-weight: 700;
+    padding: 24px 64px 64px;
+    
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.img-info {
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+}
+
+.info {
+    margin: 24px 0;
+    width: 150px;
+    flex: 1;
+    text-align: center;
+}
+
+.quote-container {
+    background: #e5e7eb;
+    display: flex;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 64px;
+}
+
+.quote-src {
+    align-self: flex-end;
+}
+
+
+/* call to action */
+.cta {
+    margin: 64px;
+    padding: 35px 48px;
+    background: #3882f6;
+    color:#e5e7eb;
+    font-size: 14px;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-header {
+    color: #f9faf8;
+    font-size: 20px;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* placeholders for images */
+.img-hero {
+    background: #7a808f;
+    margin: 10px;
+    padding: 48px;
+}
+
+.img-container {
+    padding: 69px;
+    border-style: solid;
+    border-color: rgba(0, 101, 233, 0.884);
+    border-radius: 10px;
+}
